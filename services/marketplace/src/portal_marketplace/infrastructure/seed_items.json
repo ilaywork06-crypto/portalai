@@ -1,0 +1,676 @@
+[
+ {
+  "id": "confluence-mcp",
+  "type": "MCP",
+  "name": "Confluence MCP",
+  "icon": "book",
+  "blurb": "אפשרו לכל כלי AI לקרוא ולחפש במרחבי ה-Confluence שלכם עם גישה מודעת-הרשאות.",
+  "description": "",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "מסמכים",
+   "חיפוש",
+   "ידע"
+  ],
+  "ownerName": "צוות הידע",
+  "publisher": "צוות הידע",
+  "verifiedBy": null,
+  "installs": 640,
+  "stars": 98,
+  "publishedAt": "2026-03-04",
+  "spec": {
+   "serverUrl": "confluence-mcp.portal.internal",
+   "auth": "SSO (מחובר מראש)",
+   "explanation": "פתחו את הגדרות ה-Connectors בלקוח ה-AI שלכם, הוסיפו את כתובת השרת מלמעלה והתחברו עם Portal SSO. הרשאות המרחב עוקבות אוטומטית אחר הגישה שלכם — אין טוקנים לנהל.",
+   "repo": "https://gitlab.portal.internal/knowledge/confluence-mcp"
+  }
+ },
+ {
+  "id": "jira-mcp",
+  "type": "MCP",
+  "name": "Jira MCP",
+  "icon": "kanban",
+  "blurb": "יצירה, שאילתה ועדכון של משימות Jira מתוך העוזר שלכם — לוחות ספרינט, כרטיסים ותגובות.",
+  "description": "",
+  "category": "תוכנה",
+  "tags": [
+   "jira",
+   "כרטיסים",
+   "תכנון"
+  ],
+  "ownerName": "כלי הנדסה",
+  "publisher": "כלי הנדסה",
+  "verifiedBy": null,
+  "installs": 510,
+  "stars": 57,
+  "publishedAt": "2026-02-20",
+  "spec": {
+   "serverUrl": "jira-mcp.portal.internal",
+   "auth": "SSO (מחובר מראש)",
+   "explanation": "הוסיפו את כתובת השרת בהגדרות ה-MCP של הלקוח שלכם והרשו עם SSO. הוא מוגבל לאותם פרויקטים שכבר גלויים לכם ב-Jira.",
+   "repo": "https://gitlab.portal.internal/eng-tools/jira-mcp"
+  }
+ },
+ {
+  "id": "gitlab-mcp",
+  "type": "MCP",
+  "name": "אינטגרציית GitLab",
+  "icon": "git",
+  "blurb": "עיון בריפו, קריאת MRs ופתיחת issues מתוך עוזרי קוד כמו Claude Code ו-Roo Code.",
+  "description": "",
+  "category": "תוכנה",
+  "tags": [
+   "קוד",
+   "ריפו",
+   "pull requests"
+  ],
+  "ownerName": "חוויית מפתחים",
+  "publisher": "חוויית מפתחים",
+  "verifiedBy": null,
+  "installs": 470,
+  "stars": 65,
+  "publishedAt": "2026-01-30",
+  "spec": {
+   "serverUrl": "gitlab-mcp.portal.internal",
+   "auth": "SSO (מחובר מראש)",
+   "explanation": "הוסיפו את כתובת השרת לעוזר הקוד שלכם והתחברו עם SSO. תתבקשו להעניק הרשאות ריפו מדויקות בפעם הראשונה שתשתמשו.",
+   "repo": "https://gitlab.portal.internal/dx/github-mcp"
+  }
+ },
+ {
+  "id": "slack-mcp",
+  "type": "MCP",
+  "name": "Slack MCP",
+  "icon": "slack",
+  "blurb": "חיפוש בהיסטוריית Slack ופרסום הודעות בשמכם לערוצים מאושרים.",
+  "description": "",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "slack",
+   "הודעות"
+  ],
+  "ownerName": "פלטפורמת AI",
+  "publisher": "פלטפורמת AI",
+  "verifiedBy": null,
+  "installs": 300,
+  "stars": 48,
+  "publishedAt": "2026-04-01",
+  "spec": {
+   "serverUrl": "slack-mcp.portal.internal",
+   "auth": "נדרש מפתח API",
+   "explanation": "הוסיפו את כתובת השרת, ואז הדביקו את מפתח ה-API של מרחב העבודה מעמוד מנהל ה-Slack כשתתבקשו. אתם מאשרים לכל מרחב עבודה בנפרד.",
+   "repo": "https://gitlab.portal.internal/ai-platform/slack-mcp"
+  }
+ },
+ {
+  "id": "figma-mcp",
+  "type": "MCP",
+  "name": "Figma MCP",
+  "icon": "figma",
+  "blurb": "משכו פריימים, קומפוננטות וטוקני עיצוב לתוך כלי AI עבור handoff ותיעוד.",
+  "description": "",
+  "category": "תוכנה",
+  "tags": [
+   "figma",
+   "עיצוב",
+   "handoff"
+  ],
+  "ownerName": "מערכות עיצוב",
+  "publisher": "מערכות עיצוב",
+  "verifiedBy": null,
+  "installs": 180,
+  "stars": 24,
+  "publishedAt": "2026-03-18",
+  "spec": {
+   "serverUrl": "figma-mcp.portal.internal",
+   "auth": "SSO (מחובר מראש)",
+   "explanation": "הוסיפו את כתובת השרת והתחברו עם SSO. טוקן Figma לקריאה-בלבד לספריית הארגון כבר מוקצה — אין עוד מה להגדיר.",
+   "repo": "https://gitlab.portal.internal/design/figma-mcp"
+  }
+ },
+ {
+  "id": "snowflake-mcp",
+  "type": "MCP",
+  "name": "Snowflake MCP",
+  "icon": "database",
+  "blurb": "הריצו שאילתות קריאה-בלבד מבוקרות מול מחסני Snowflake מאושרים.",
+  "description": "",
+  "category": "מערכות מבצעיות",
+  "tags": [
+   "sql",
+   "מחסן",
+   "אנליטיקה"
+  ],
+  "ownerName": "פלטפורמת דאטה",
+  "publisher": "פלטפורמת דאטה",
+  "verifiedBy": null,
+  "installs": 210,
+  "stars": 30,
+  "publishedAt": "2026-02-11",
+  "spec": {
+   "serverUrl": "snowflake-mcp.portal.internal",
+   "auth": "SSO (מחובר מראש)",
+   "explanation": "הוסיפו את כתובת השרת והרשו עם SSO. אבטחה ברמת השורה והגבלת המחסן מטופלות על ידי פלטפורמת הדאטה, כך שאתם רואים רק את מה שמותר לכם.",
+   "repo": "https://gitlab.portal.internal/data/snowflake-mcp"
+  }
+ },
+ {
+  "id": "pagerduty-mcp",
+  "type": "MCP",
+  "name": "PagerDuty MCP",
+  "icon": "alert",
+  "blurb": "בדקו לוחות כוננות וסטטוס תקריות מתוך העוזר שלכם במהלך תקרית.",
+  "description": "",
+  "category": "מערכות מבצעיות",
+  "tags": [
+   "תקריות",
+   "כוננות"
+  ],
+  "ownerName": "SRE",
+  "publisher": "SRE",
+  "verifiedBy": null,
+  "installs": 60,
+  "stars": 6,
+  "publishedAt": "2026-05-02",
+  "spec": {
+   "serverUrl": "pagerduty-mcp.portal.internal",
+   "auth": "נדרש מפתח API",
+   "explanation": "דורש אישור SRE. לאחר אישור, הוסיפו את כתובת השרת והדביקו את מפתח ה-API של PagerDuty. קריאה-בלבד כברירת מחדל.",
+   "repo": null
+  }
+ },
+ {
+  "id": "brand-voice",
+  "type": "Plugin",
+  "name": "תוסף קול המותג",
+  "icon": "sparkles",
+  "blurb": "חבילת system-prompt ששומרת על פלט AI תואם-מותג בקופי חיצוני.",
+  "description": "שומר על טון ומינוח של המותג בכל קופי חיצוני שנכתב עם AI. כולל Skill עם מדריך הסגנון, פקודה לבדיקת טקסט קיים, ו-hook שמתריע על מונחים אסורים.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "שיווק",
+   "כתיבה",
+   "מותג"
+  ],
+  "ownerName": "שיווק",
+  "publisher": "שיווק",
+  "verifiedBy": null,
+  "installs": 140,
+  "stars": 17,
+  "publishedAt": "2026-04-22",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/marketing/brand-voice",
+   "version": "1.2.0",
+   "compat": [
+    "Claude Code",
+    "OpenCode"
+   ],
+   "includes": {
+    "skills": [
+     "מדריך קול המותג"
+    ],
+    "agents": [],
+    "commands": [
+     "/brand-check"
+    ],
+    "hooks": [
+     "בדיקת מונחים אסורים"
+    ],
+    "mcps": []
+   }
+  }
+ },
+ {
+  "id": "pii-redactor",
+  "type": "Plugin",
+  "name": "PII Redactor",
+  "icon": "shield",
+  "blurb": "מסנן עיבוד-מקדים שמסיר מידע אישי לפני שההנחיות מגיעות למודל.",
+  "description": "מסיר מידע אישי (שמות, טלפונים, ת״ז, כתובות מייל) לפני שהבקשה נשלחת למודל. מופעל כברירת מחדל ב-RChat, ובכלי קוד מתקינים אותו כ-Plugin.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "אבטחה",
+   "פרטיות"
+  ],
+  "ownerName": "אבטחה",
+  "publisher": "אבטחה",
+  "verifiedBy": null,
+  "installs": 390,
+  "stars": 50,
+  "publishedAt": "2026-03-08",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/security/pii-redactor",
+   "version": "3.0.1",
+   "compat": [
+    "Claude Code",
+    "OpenCode",
+    "Roo Code"
+   ],
+   "includes": {
+    "skills": [],
+    "agents": [],
+    "commands": [
+     "/redact"
+    ],
+    "hooks": [
+     "סינון PII לפני כל בקשה"
+    ],
+    "mcps": []
+   }
+  }
+ },
+ {
+  "id": "skill-meeting-recap",
+  "type": "Skill",
+  "name": "סיכום פגישה",
+  "icon": "mic",
+  "blurb": "הפכו הערות פגישה גולמיות לסיכום נקי עם החלטות ואחראים.",
+  "description": "הדביקו את ההערות המבולגנות או תמלול והמיומנות הזו מפיקה סיכום מובנה: תקציר בן שתי שורות, ההחלטות שהתקבלו ופריטי פעולה עם אחראים ותאריכי יעד. מכוון לתרבות הפגישות ולתבניות שלנו כך שהפלט מוכן להדבקה בערוץ.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "פגישות",
+   "פרודוקטיביות"
+  ],
+  "ownerName": "צוות קרמל",
+  "publisher": "צוות קרמל",
+  "verifiedBy": "צוות קרמל",
+  "installs": 820,
+  "stars": 88,
+  "publishedAt": "2026-04-12",
+  "spec": {
+   "content": "אתה מסכם פגישות. בהינתן הערות או תמלול, החזר:\n1) תקציר בן 2 משפטים.\n2) החלטות — כתבליטים.\n3) פריטי פעולה בפורמט: [אחראי] — משימה — תאריך יעד.\nשמור על תמציתיות. סמן כל דבר מעורפל כשאלה פתוחה בסוף.",
+   "repo": "https://gitlab.portal.internal/karamel/meeting-recap",
+   "mdName": "SKILL.md"
+  }
+ },
+ {
+  "id": "skill-code-review",
+  "type": "Skill",
+  "name": "עוזר סקירת קוד",
+  "icon": "code",
+  "blurb": "סקירת PR מובנית: נכונות, בדיקות, קריאוּת וסיכון.",
+  "description": "תנו לו diff או קישור ל-PR והוא עובר רשימת תיוג עקבית — נכונות, מקרי קצה, כיסוי בדיקות, קריאות וסיכון השקה — ואז מסכם את הפריטים שחובה לתקן קודם. נבנה עם חוויית מפתחים כדי להתאים לתקני הסקירה שלנו.",
+  "category": "תוכנה",
+  "tags": [
+   "הנדסה",
+   "סקירת קוד"
+  ],
+  "ownerName": "צוות קרמל",
+  "publisher": "צוות קרמל",
+  "verifiedBy": "צוות קרמל",
+  "installs": 560,
+  "stars": 81,
+  "publishedAt": "2026-03-30",
+  "spec": {
+   "content": "סקור את השינוי הבא. השב עם:\n- חובה לתקן (חוסם)\n- כדאי לתקן (לא חוסם)\n- זוטות\n- בדיקות חסרות\n- סיכון השקה (נמוך/בינוני/גבוה) + למה\nהיה ספציפי והפנה לשורות במידת האפשר.",
+   "repo": "https://gitlab.portal.internal/dx/code-review-assistant",
+   "mdName": "SKILL.md"
+  }
+ },
+ {
+  "id": "skill-bug-triage",
+  "type": "Skill",
+  "name": "עוזר מיון באגים",
+  "icon": "alert",
+  "blurb": "מנסח דיווח באג נקי והשערת סיבה סבירה מתוך דיווח מעורפל.",
+  "description": "נמאס לי מדיווחי באגים חצי-אפויים, אז בניתי את זה. הדביקו מה שיש לכם — הודעת Slack, תיאור צילום מסך, שגיאה — והוא מפיק דיווח מובנה עם שלבי שחזור, צפוי מול בפועל, חומרה והשערה ראשונה לאן להסתכל.",
+  "category": "תוכנה",
+  "tags": [
+   "הנדסה",
+   "QA"
+  ],
+  "ownerName": "תום ב.",
+  "publisher": "תום ב.",
+  "verifiedBy": null,
+  "installs": 120,
+  "stars": 24,
+  "publishedAt": "2026-05-06",
+  "spec": {
+   "content": "הפוך את הדבר הבא לדיווח באג:\n- כותרת\n- שלבי שחזור\n- צפוי מול בפועל\n- חומרה (S1–S4) + נימוק\n- השערה ראשונה לשורש הבעיה\nשאל על כל דבר קריטי שחסר.",
+   "repo": "https://gitlab.portal.internal/tomb/bug-triage-helper",
+   "mdName": "SKILL.md"
+  }
+ },
+ {
+  "id": "skill-user-story",
+  "type": "Skill",
+  "name": "כותב סיפורי משתמש",
+  "icon": "pencil",
+  "blurb": "הופך רעיון גולמי לסיפורי משתמש מנוסחים היטב עם קריטריוני קבלה.",
+  "description": "הכלי שלי להכנת ספרינט. תארו את הפיצ'ר במשפט-שניים והוא מחזיר סיפורים מנוסחים כראוי (כ... אני רוצה... כדי ש...) עם קריטריוני קבלה ומקרי קצה ששווה לשקול.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "מוצר",
+   "תכנון"
+  ],
+  "ownerName": "מאיה ר.",
+  "publisher": "מאיה ר.",
+  "verifiedBy": null,
+  "installs": 95,
+  "stars": 12,
+  "publishedAt": "2026-05-18",
+  "spec": {
+   "content": "עבור הפיצ'ר המתואר, הפק 2–4 סיפורי משתמש. כל סיפור:\n- כ-[תפקיד], אני רוצה [יכולת], כדי ש-[ערך].\n- קריטריוני קבלה (Given/When/Then).\n- מקרי קצה לשקול.",
+   "repo": "https://gitlab.portal.internal/mayar/user-story-writer",
+   "mdName": "SKILL.md"
+  }
+ },
+ {
+  "id": "agent-qa-runner",
+  "type": "Agent",
+  "name": "סוכן בדיקות",
+  "icon": "flask",
+  "blurb": "מריץ בדיקות אוטומטיות, מזהה רגרסיות ומדווח על תוצאות ב-Slack.",
+  "description": "סוכן שמתחבר לצינור ה-CI/CD שלכם, מריץ חבילות בדיקה בכל MR, מזהה רגרסיות ומפרסם דוח מובנה לערוץ הצוות. תומך ב-Jest, Pytest ו-Go tests.",
+  "category": "תוכנה",
+  "tags": [
+   "בדיקות",
+   "CI/CD",
+   "אוטומציה"
+  ],
+  "ownerName": "צוות קרמל",
+  "publisher": "צוות קרמל",
+  "verifiedBy": "צוות קרמל",
+  "installs": 180,
+  "stars": 22,
+  "publishedAt": "2026-05-20",
+  "spec": {
+   "content": "# סוכן בדיקות\n\nסוכן אוטונומי שמריץ בדיקות, מנתח כשלונות ומציע תיקונים.\n\n## הגדרה\n1. חברו את ה-GitLab MCP\n2. הגדירו את repository target\n3. הסוכן יתחיל לרוץ על כל MR חדש\n\n## יכולות\n- הרצת בדיקות אוטומטית\n- ניתוח כשלונות וזיהוי שורש הבעיה\n- הצעת תיקונים\n- דיווח ל-Slack",
+   "repo": "https://gitlab.portal.internal/karamel/qa-agent",
+   "mdName": "README.md",
+   "audience": [
+    "מהנדסים",
+    "QA"
+   ],
+   "requiredTools": [
+    "Claude Code",
+    "אינטגרציית GitLab"
+   ]
+  }
+ },
+ {
+  "id": "agent-support-triage",
+  "type": "Agent",
+  "name": "סוכן מיון תמיכה",
+  "icon": "message",
+  "blurb": "ממיין פניות תמיכה, מסווג לפי דחיפות ומנתב לצוות המתאים.",
+  "description": "סוכן שקורא פניות נכנסות, מסווג אותן לפי חומרה (S1–S4), מזהה את התחום הרלוונטי ומנתב לצוות המתאים. כולל תשובה ראשונית אוטומטית ללקוח עם זמן טיפול צפוי.",
+  "category": "מערכות מבצעיות",
+  "tags": [
+   "תמיכה",
+   "אוטומציה",
+   "ניתוב"
+  ],
+  "ownerName": "צוות קרמל",
+  "publisher": "צוות קרמל",
+  "verifiedBy": "צוות קרמל",
+  "installs": 340,
+  "stars": 37,
+  "publishedAt": "2026-06-02",
+  "spec": {
+   "content": "# סוכן מיון תמיכה\n\nממיין ומנתב פניות תמיכה אוטומטית.\n\n## הגדרה\n1. חברו את Slack MCP לערוץ הפניות\n2. הגדירו כללי ניתוב לפי צוות\n3. הסוכן יתחיל לעבד פניות חדשות\n\n## יכולות\n- סיווג חומרה אוטומטי (S1–S4)\n- ניתוב לצוות המתאים\n- תשובה ראשונית ללקוח\n- סיכום פנייה למטפל",
+   "repo": "https://gitlab.portal.internal/karamel/support-triage-agent",
+   "mdName": "README.md",
+   "audience": [
+    "תמיכה",
+    "תפעול"
+   ],
+   "requiredTools": [
+    "RChat",
+    "Slack MCP"
+   ]
+  }
+ },
+ {
+  "id": "agent-weekly-report",
+  "type": "Agent",
+  "name": "סוכן דוחות שבועיים",
+  "icon": "chart",
+  "blurb": "אוסף נתונים ממערכות שונות ומייצר דוח שבועי מותאם אישית.",
+  "description": "סוכן שמתחבר ל-RunDB, ל-Jira ול-Slack, אוסף את המדדים השבועיים שלכם ומייצר דוח מעוצב עם גרפים, מגמות ופריטי פעולה. ניתן להגדיר תבנית מותאמת לכל צוות.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "דוחות",
+   "אנליטיקה",
+   "אוטומציה"
+  ],
+  "ownerName": "מאיה ר.",
+  "publisher": "מאיה ר.",
+  "verifiedBy": null,
+  "installs": 95,
+  "stars": 17,
+  "publishedAt": "2026-05-28",
+  "spec": {
+   "content": "# סוכן דוחות שבועיים\n\nמייצר דוח שבועי אוטומטי מנתוני הארגון.\n\n## הגדרה\n1. הגדירו את המדדים שחשובים לכם\n2. חברו את מקורות הנתונים (RunDB, Jira)\n3. בחרו יום ושעה לשליחה\n\n## יכולות\n- איסוף נתונים ממקורות מרובים\n- יצירת גרפים ומגמות\n- זיהוי חריגות\n- שליחה אוטומטית לערוץ",
+   "repo": "https://gitlab.portal.internal/mayar/weekly-report-agent",
+   "mdName": "README.md",
+   "audience": [
+    "מנהלי מוצר",
+    "אנליסטים",
+    "מנהלים"
+   ],
+   "requiredTools": [
+    "RunDB",
+    "Jira MCP"
+   ]
+  }
+ },
+ {
+  "id": "t3code",
+  "type": "App",
+  "name": "T3 Code",
+  "icon": "code",
+  "blurb": "ממשק גרפי מינימלי לעבודה עם סוכני קוד, במקום הטרמינל.",
+  "description": "T3 Code היא אפליקציית קוד פתוח שעוטפת את סוכני הקוד בממשק נקי: כמה שיחות במקביל, צפייה בשינויים בקבצים ואישור פעולות במקום אחד. הסוכן עצמו רץ אצלכם, האפליקציה רק נותנת לו ממשק.",
+  "category": "תוכנה",
+  "tags": [
+   "ממשק",
+   "סוכני קוד",
+   "קוד פתוח"
+  ],
+  "ownerName": "T3 Tools",
+  "publisher": "T3 Tools",
+  "verifiedBy": null,
+  "installs": 180,
+  "stars": 28,
+  "publishedAt": "2026-10-29",
+  "spec": {
+   "repo": "https://github.com/pingdotgg/t3code",
+   "version": "0.1",
+   "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+   ],
+   "worksWith": [
+    "Codex",
+    "Claude Code"
+   ],
+   "runCmd": "npx t3",
+   "downloads": {}
+  }
+ },
+ {
+  "id": "portal-dev-kit",
+  "type": "Plugin",
+  "name": "ערכת פיתוח Portal",
+  "icon": "package",
+  "blurb": "כל מה שצריך כדי לעבוד עם עוזר קוד בסטנדרט של החברה, בהתקנה אחת.",
+  "description": "הערכה מאגדת את סקירת הקוד, כתיבת הטסטים וסוכן הבדיקות, יחד עם החיבורים ל-GitLab ול-Jira. אחרי ההתקנה יש לכם פקודות מוכנות לסקירה, לבדיקות ולהכנת MR, ו-hook שמריץ lint לפני כל commit.",
+  "category": "תוכנה",
+  "tags": [
+   "הנדסה",
+   "סקירת קוד",
+   "בדיקות"
+  ],
+  "ownerName": "צוות קרמל",
+  "publisher": "צוות קרמל",
+  "verifiedBy": "צוות קרמל",
+  "installs": 410,
+  "stars": 35,
+  "publishedAt": "2026-07-03",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/karamel/portal-dev-kit",
+   "version": "1.4.0",
+   "compat": [
+    "Claude Code",
+    "OpenCode"
+   ],
+   "includes": {
+    "skills": [
+     "עוזר סקירת קוד",
+     "כותב טסטים"
+    ],
+    "agents": [
+     "סוכן בדיקות"
+    ],
+    "commands": [
+     "/review",
+     "/test",
+     "/ship"
+    ],
+    "hooks": [
+     "בדיקת lint לפני commit"
+    ],
+    "mcps": [
+     "אינטגרציית GitLab",
+     "Jira MCP"
+    ]
+   }
+  }
+ },
+ {
+  "id": "sre-oncall",
+  "type": "Plugin",
+  "name": "חבילת On-call ל-SRE",
+  "icon": "alert",
+  "blurb": "תחקור תקריות מהטרמינל: כוננות, לוגים, מדדים ותחקיר אחרי האירוע.",
+  "description": "מחברת את PagerDuty ואת Snowflake, ומוסיפה סוכן שאוסף הקשר על תקרית פתוחה: מי בכונן, מה השתנה לאחרונה ואילו מדדים חריגים. הפקודה /postmortem מנסחת טיוטת תחקיר לפי התבנית של SRE.",
+  "category": "מערכות מבצעיות",
+  "tags": [
+   "תקריות",
+   "כוננות",
+   "SRE"
+  ],
+  "ownerName": "SRE",
+  "publisher": "SRE",
+  "verifiedBy": null,
+  "installs": 140,
+  "stars": 16,
+  "publishedAt": "2026-06-18",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/sre/oncall-plugin",
+   "version": "0.9.2",
+   "compat": [
+    "Claude Code"
+   ],
+   "includes": {
+    "skills": [
+     "ניתוח לוגים"
+    ],
+    "agents": [
+     "סוכן תחקור תקריות"
+    ],
+    "commands": [
+     "/incident",
+     "/postmortem"
+    ],
+    "hooks": [],
+    "mcps": [
+     "PagerDuty MCP",
+     "Snowflake MCP"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ds-frontend",
+  "type": "Plugin",
+  "name": "Frontend לפי Design System",
+  "icon": "figma",
+  "blurb": "עוזר הקוד בונה רכיבים מתוך ה-Design System ובודק נגישות.",
+  "description": "מלמדת את עוזר הקוד להשתמש ברכיבים ובטוקנים הרשמיים במקום להמציא סגנונות. כוללת חיבור ל-Figma, פקודה ליצירת רכיב מפריים, ו-hook שמתריע כשמופיע צבע או מרווח שלא קיימים במערכת.",
+  "category": "תוכנה",
+  "tags": [
+   "frontend",
+   "עיצוב",
+   "נגישות"
+  ],
+  "ownerName": "מערכות עיצוב",
+  "publisher": "מערכות עיצוב",
+  "verifiedBy": null,
+  "installs": 220,
+  "stars": 36,
+  "publishedAt": "2026-06-09",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/design/ds-frontend-plugin",
+   "version": "2.1.0",
+   "compat": [
+    "Claude Code",
+    "Roo Code"
+   ],
+   "includes": {
+    "skills": [
+     "רכיבי Design System",
+     "בדיקת נגישות"
+    ],
+    "agents": [],
+    "commands": [
+     "/component",
+     "/a11y"
+    ],
+    "hooks": [
+     "אימות טוקני עיצוב בשמירה"
+    ],
+    "mcps": [
+     "Figma MCP"
+    ]
+   }
+  }
+ },
+ {
+  "id": "analyst-kit",
+  "type": "Plugin",
+  "name": "ערכת דאטה לאנליסטים",
+  "icon": "database",
+  "blurb": "שאילתות בטוחות, גרפים ודוח שבועי מתוך עוזר הקוד.",
+  "description": "אספתי את מה שאני משתמש בו כל יום: Skill שכותב SQL לקריאה בלבד לפי המוסכמות שלנו, פקודות מהירות לשאילתה ולגרף, והסוכן של מאיה לדוח השבועי.",
+  "category": "מערכות ארגוניות",
+  "tags": [
+   "דאטה",
+   "sql",
+   "אנליטיקה"
+  ],
+  "ownerName": "תום ב.",
+  "publisher": "תום ב.",
+  "verifiedBy": null,
+  "installs": 75,
+  "stars": 12,
+  "publishedAt": "2026-05-28",
+  "spec": {
+   "repo": "https://gitlab.portal.internal/tomb/analyst-kit",
+   "version": "0.3.0",
+   "compat": [
+    "Claude Code",
+    "OpenCode",
+    "Roo Code"
+   ],
+   "includes": {
+    "skills": [
+     "כותב SQL בטוח"
+    ],
+    "agents": [
+     "סוכן דוחות שבועיים"
+    ],
+    "commands": [
+     "/query",
+     "/chart"
+    ],
+    "hooks": [],
+    "mcps": [
+     "Snowflake MCP"
+    ]
+   }
+  }
+ }
+]

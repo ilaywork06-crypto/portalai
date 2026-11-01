@@ -1,0 +1,69 @@
+# API gateway: one origin for the browser, each /AI/api prefix routed to the service that owns it.
+# ${WEB_UPSTREAM} is the frontend: the Vite dev server in development, the static web image in production.
+
+# A recreated container gets a new address, so names are re-resolved instead of being fixed at startup.
+# ${NGINX_LOCAL_RESOLVERS} is the container's own DNS (NGINX_ENTRYPOINT_LOCAL_RESOLVERS=1).
+resolver ${NGINX_LOCAL_RESOLVERS} valid=5s ipv6=off;
+
+upstream auth        { zone upstreams 256k; server auth:8000 resolve;        keepalive 16; }
+upstream marketplace { zone upstreams;      server marketplace:8000 resolve; keepalive 16; }
+upstream community   { zone upstreams;      server community:8000 resolve;   keepalive 16; }
+upstream usage       { zone upstreams;      server usage:8000 resolve;       keepalive 16; }
+upstream web         { zone upstreams;      server ${WEB_UPSTREAM} resolve;  keepalive 16; }
+
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      '';
+}
+
+limit_req_zone $binary_remote_addr zone=login:10m rate=10r/m;
+
+server {
+    listen 80;
+    server_tokens off;
+    absolute_redirect off;
+    client_max_body_size 12m;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options DENY always;
+    add_header Referrer-Policy same-origin always;
+
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header Connection "";
+    proxy_set_header X-Request-ID $request_id;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+    location = /healthz { access_log off; default_type text/plain; return 200 "ok\n"; }
+    location = /        { return 302 /AI/; }
+    location = /AI      { return 302 /AI/; }
+
+    location = /AI/api/auth/login {
+        limit_req zone=login burst=5 nodelay;
+        limit_req_status 429;
+        proxy_pass http://auth;
+    }
+    location ~ ^/AI/api/auth(/|$)            { proxy_pass http://auth; }
+    location ~ ^/AI/api/market(/|$)          { proxy_pass http://marketplace; }
+    location ~ ^/AI/api/(posts|uploads)(/|$) { proxy_pass http://community; }
+    location ~ ^/AI/api/(usage|org)(/|$)     { proxy_pass http://usage; }
+
+    location ~ ^/AI/api/docs/(?<service>auth|marketplace|community|usage)(/|$) { proxy_pass http://$service; }
+
+    location /AI/api/ {
+        default_type application/json;
+        return 404 '{"error":{"code":"not_found","message":"No service handles this path."}}';
+    }
+
+    location /AI/ {
+        proxy_pass http://web;
+        proxy_set_header Host $host;
+        proxy_set_header X-Request-ID $request_id;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    }
+}

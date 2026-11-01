@@ -1,0 +1,31 @@
+{
+  "workDays": [0, 1, 2, 3, 4],
+  "workStart": 9,
+  "workEnd": 21,
+  "peaks": [[12, 14], [16, 18]],
+  "dailyPct": 80,
+  "weeklyPct": 75,
+  "smartQuiet": 25,
+  "smartStrong": 50,
+  "premiumWarn": 50,
+  "inputShare": 85,
+  "showNames": true,
+  "defaultRange": 30,
+  "retentionDays": 180,
+  "models": [
+    { "id": "claude-opus-4-1", "name": "Claude Opus 4.1", "provider": "Anthropic", "enabled": true, "tier": 3, "in": 15, "out": 75 },
+    { "id": "claude-sonnet-4-5", "name": "Claude Sonnet 4.5", "provider": "Anthropic", "enabled": true, "tier": 2, "in": 3, "out": 15 },
+    { "id": "claude-haiku-4", "name": "Claude Haiku 4", "provider": "Anthropic", "enabled": true, "tier": 1, "in": 0.8, "out": 4 }
+  ],
+  "tools": [
+    { "id": "claude-code", "name": "Claude Code", "icon": "terminal" },
+    { "id": "opencode", "name": "OpenCode", "icon": "code" },
+    { "id": "roo-code", "name": "Roo Code", "icon": "bolt" },
+    { "id": "other", "name": "כלי קוד אחר", "icon": "key" }
+  ],
+  "tiers": {
+    "3": { "label": "פרימיום", "sign": "$$$", "hint": "למשימות קשות: ארכיטקטורה, באגים עמוקים" },
+    "2": { "label": "סטנדרט", "sign": "$$", "hint": "ברירת מחדל לרוב עבודת הקוד" },
+    "1": { "label": "חסכוני", "sign": "$", "hint": "השלמות, טסטים, תיעוד, שינויים קטנים" }
+  }
+}
