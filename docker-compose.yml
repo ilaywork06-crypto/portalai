@@ -1,0 +1,11 @@
+# Builds the frontend and serves it with nginx.
+#   docker compose up --build   →  http://localhost:8080/AI/
+name: portal-ai
+
+services:
+  web:
+    build: .
+    image: portal-ai-web
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8080}:80"
